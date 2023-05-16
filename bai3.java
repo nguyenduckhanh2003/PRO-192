@@ -23,8 +23,8 @@ public class Peterson1to1000 {
         int sum = 0;
         int temp = number;
         while (temp > 0) {
-            int digit = temp % 10;
-            sum += factorial(digit);
+            int a = temp % 10;
+            sum += factorial(a);
             temp /= 10;
         }
         return sum == number;
